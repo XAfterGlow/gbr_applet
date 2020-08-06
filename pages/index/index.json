@@ -1,0 +1,10 @@
+{
+
+    "navigationStyle":"default",
+    "navigationBarBackgroundColor": "#FF6186",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fafafa",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "usingComponents": {}
+}

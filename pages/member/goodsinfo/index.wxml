@@ -1,0 +1,23 @@
+<!--pages/member/goodsinfo/index.wxml-->
+<view>
+<view class="txt">{{datas.data}}</view>
+<view class="imgsllow">
+
+	<!-- <image class="imgs" src="{{datas.img}}"></image> -->
+  <swiper  indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrl}}" wx:key="*this">
+          <swiper-item>
+            <image class="imgs" src="{{item}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+</view>
+  <view class="bottom-btn">
+  <view class="btn" bindtap="savetxt" data-text="{{datas.data}}">保存文字</view>
+
+  <view class="btn" bindtap="saveimg" >保存图片 </view>
+  <button class='openSetting' open-type="openSetting" bindopensetting='handleSetting' hidden='{{openSettingBtnHidden}}'>授权</button>
+  </view>
+
+  </view>

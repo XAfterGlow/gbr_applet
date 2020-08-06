@@ -1,0 +1,426 @@
+
+.commission .user-info {
+  width: 100%;
+  border-bottom: 1px solid #FF6186;
+  background: #FF6186;
+  padding: 8rpx 0;
+}
+
+.commission .user-info image {
+  border-radius: 50%;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.commission .fui-list-media {
+  margin-right: 28rpx;
+}
+
+.commission .user-info .title {
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.commission .user-info .subtitle {
+  color: #fff;
+  font-size: 22rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: auto;
+  display: inline-block;
+  border: 1rpx solid #fff;
+  border-radius: 34rpx;
+  line-height: 32rpx;
+  max-width: 100%;
+  padding: 0 12rpx;
+  box-sizing: border-box;
+  height: 36rpx;
+}
+
+.commission .user-info .text {
+  color: #fff;
+  font-size: 22rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.commission .userblock {
+  margin-top: 20rpx;
+}
+
+.commission .userblock .line {
+  padding: 15rpx 0 15rpx 0;
+}
+
+.commission .userblock .line.total {
+  height: 166rpx;
+  background: #fff;
+  padding: 32rpx 24rpx;
+  box-sizing: border-box;
+}
+
+.commission .userblock .line.total .title {
+  color: #000;
+  font-size: 24rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.commission .userblock .line.total .num {
+  font-size: 40rpx;
+  color: #ff8000;
+  line-height: 1.5;
+}
+
+.commission .userblock .line.able {
+  font-size: 27rpx;
+  height: 166rpx;
+  background: #fff;
+  padding: 0 24rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.commission .userblock .line.able .num {
+  font-size: 40rpx;
+  color: #ff8000;
+  line-height: 1.5;
+}
+
+.commission .userblock .line .text {
+  padding-right: 230rpx;
+}
+
+.commission .userblock .line .btn {
+  width: auto;
+  padding: 0 24rpx;
+  border: 1px solid #fff;
+  border-radius: 56rpx;
+  height: 56rpx;
+  line-height: 54rpx;
+  margin-right: 0;
+  font-size: 26rpx;
+}
+
+.commission .userblock .line.able:after {
+  content: " ";
+  position: absolute;
+  left: 20rpx;
+  right: 20rpx;
+  top: -1px;
+  height: 1px;
+  border-top: 1px solid #ebebeb;
+  color: #D9D9D9;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+
+.commission .fui-block-group {
+}
+
+.commission .fui-block-group:after {
+  /* content: " ";
+  position: absolute;
+  left: 20rpx;
+  right: 20rpx;
+  top: 50%;
+  height: 1px;
+  border-top: 1px solid #ebebeb;
+  color: #D9D9D9;
+  transform-origin: 0 0;
+  transform: scaleY(0.5); */
+  display: none;
+}
+
+.commission .fui-block-group:before {
+  content: " ";
+  position: absolute;
+  top: 20rpx;
+  bottom: 20rpx;
+  left: 50%;
+  width: 1px;
+  border-left: 1px solid #ebebeb;
+  color: #D9D9D9;
+  transform-origin: 0 0;
+  transform: scaleX(0.5);
+  z-index: 2;
+}
+
+.commission .fui-block-group .fui-block-child {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-left: 24rpx;
+  height: 148rpx;
+  box-sizing: border-box;
+}
+
+.fui-block-group .fui-block-child::after {
+  display: none;
+
+}
+
+.fui-block-group .fui-block-child::before {
+  display: none;
+}
+
+.commission .fui-block-group .fui-block-child .icon {
+  height: auto;
+  padding: 0;
+}
+
+.fui-block-group .fui-block-child .icon i {
+  font-size: 52rpx;
+}
+
+.commission .fui-block-group .fui-block-child .icon image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.commission .fui-block-group .fui-block-child .text {
+  height: auto;
+  line-height: 1.5;
+  margin-left: 24rpx;
+  font-size: 24rpx;
+  color: #999;
+  text-align: left;
+}
+
+.commission .fui-block-group .fui-block-child .title {
+  height: auto;
+  line-height: normal;
+  font-size: 28rpx;
+  color: #000;
+  text-align: left;
+}
+
+.commission .fui-block-group .fui-block-child .text text {
+  color: #999;
+}
+
+.edtion {
+  width: 100%;
+  position: fixed;
+  bottom: 100rpx;
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+  padding: 20rpx 0;
+}
+
+.commission-shouye {
+  position: fixed;
+  right: 20rpx;
+  z-index: 999;
+  font-size: 22rpx;
+  color: #fff;
+  width: 84rpx;
+  height: 84rpx;
+  transition: all .7s;
+  background: rgba(0,0,0,0.5);
+  bottom: 280rpx;
+}
+
+.commission-shouye {
+  width: 90rpx;
+  height: 90rpx;
+  background: #ff5555;
+  position: fixed;
+  right: 20rpx;
+  bottom: 80rpx;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  line-height: 90rpx;
+}
+
+.commission-shouye {
+  bottom: 235rpx;
+}
+
+.commission-shouye .icox {
+  font-size: 50rpx;
+  color: #fff;
+}
+
+
+/* 分享样式 */
+
+.page-shade {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.fui-share {
+  width: 100%;
+  height: 400rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1001;
+}
+
+.fui-share.fui-iphonex-share {
+  bottom: 68rpx;
+}
+
+.fui-iphonex-button {
+  background: #fafafa;
+}
+
+.share-choose {
+  height: 180rpx;
+  padding: 74rpx 120rpx 60rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-choose image {
+  width: 156rpx;
+  height: 148rpx;
+}
+
+.share-wechat,.share-poster,.test-container {
+  width: 160rpx;
+  text-align: center;
+  position: relative;
+}
+
+.test-container {
+  padding-left: 28rpx;
+}
+
+.test-container image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 28rpx;
+}
+
+.test-container share-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.test-container share-button view {
+  width: 100%;
+  height: 100%;
+}
+
+.text-explain {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.5;
+}
+
+.close-btn {
+  width: 100%;
+  height: 86rpx;
+  background: #fafafa;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 86rpx;
+  color: #999;
+}
+
+.close-btn:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1;
+  height: 1px;
+  border-top: 1px solid #ebebeb;
+  color: #d9d9d9;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+
+.fui-cell-group .fui-cell .fui-cell-remark.showshade::after,button:after {
+  display: none;
+}
+/* 店主工具样式 */
+.txt{
+font-size: 18px;
+  font-weight: 800;
+  margin: 20rpx;
+}
+.fimgs{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.wl-icon{
+  height: 100rpx;
+  width: 100rpx;
+}
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 25%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.tt{
+  font-size: 26rpx;
+  margin-top: 10rpx;
+}
+.progress{
+  margin: 20rpx;
+}
+.box{
+  display: inline-block;
+  width: 220rpx;
+  height: 320rpx;
+  margin: 20rpx 10rpx;
+}
+.box image{
+  width: 100%;
+  height: 100%;
+  
+}
+.lines{
+  height: 1px;
+  border-top: 1rpx solid #F3F3F3;
+}

@@ -1,0 +1,26 @@
+
+<view class="wl-body" wx:for="{{diyitem.data}}"  wx:for-index="childids" wx:for-item="childitems" wx:key="childids"> 
+    <view class="wl-top">
+        <view class="left"><view class="wl-img" style="background-image: url({{childitems.thumb}});">
+        <!-- <image src="/static/images/icon-huangguan.png"></image> -->
+         </view> <view class="wl-title">{{childitems.title}}</view></view>
+        <view class="right"><i class="icon icon-right"> </i> </view>
+    </view>
+    <view class="big-img" style="background-image: url({{childitems.thumb}});">
+     <!-- <image src="{{diyitem.data[0].thumb}}"></image> -->
+    </view>
+<view >
+ <view class="my-scroll">
+        <scroll-view class="scroll-view" scroll-x="true"  style="width: 100%">
+       <view  wx:for="{{diyitem.data}}" class="scroll-view-item "  wx:for-index="childid" wx:for-item="childitem" wx:key="childid">
+       <view class="wl-list"> 
+       <image src="{{childitem.thumb}}"></image>
+                <text class="wl-t1">{{childitem.seetitle}}</text>
+                <text class="wl-price">￥{{childitem.price}}</text>
+                <text class="wl-price2">￥{{childitem.productprice}}</text>
+       </view>               
+            </view>
+        </scroll-view>
+      </view>
+</view>
+</view>

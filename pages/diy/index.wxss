@@ -1,0 +1,2 @@
+@import "./template/wl_hwzc.wxss";
+@import "./template/wl_pgoods.wxss"

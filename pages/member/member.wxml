@@ -1,0 +1,134 @@
+<loading wx:if="{{!show}}">加载中...</loading>
+<view class="model" wx:if="{{show}}">
+	<view class="wl_card" style="background-image:url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1534980682,1392181623&fm=26&gp=0.jpg);">
+      <image wx:if="{{member.avatar}}" class="bgimg" src="/static/images/icon-huangguan.png"></image>
+      <image wx:else class="bgimg" src="/static/images/icon-white.png"></image>
+		<view class="wl_userinfo">
+			<view class="avatar">
+				<image class="icon" src="{{member.avatar||'/static/images/noface.png'}}"></image>
+			</view>
+			<view class="nickname">
+         <text wx:if="{{member.nickname}}">{{member.nickname}}</text>
+          <navigator wx:else openType="navigate" url="/pages/auth/index"><text >未更新用户信息，请先登录</text> </navigator>
+         </view>
+		</view>
+      <view class="wl_qxname" >
+      <text wx:if="{{member.levelname}}">{{member.levelname}}</text>
+      <text  wx:else >注册用户</text>
+      </view>
+		
+		<view class="wl_info">
+			<view class="wl_left">成长值 <text>0</text> <i class="icon icon-right"></i></view>
+			<view class="wl_right">差<text>2.00</text>成长值升级 VIP(享8.5折起)
+			</view>
+		</view>
+	</view>
+
+
+	<view class="wl_other">
+		<view class="wl_vip">
+        <navigator class="my_vip" openType="navigate" url="/pages/member/Vip/index">			
+				<view class="wl_ic">
+					<i class="icon icon-pic"></i>
+				</view>
+				<view>
+					<view class="wl_t1">
+						直升vip
+					</view>
+					<view class="wl_t2">
+						永久享8.5折起
+					</view>
+				</view>
+				<view><i class="icon icon-right"></i></view>			
+         </navigator>
+
+          <navigator class="my_svip" openType="navigate" url="/pages/member/Svip/index">
+				<view class="wl_ic">
+					<i class="icon icon-pic"></i>
+				</view>
+				<view>
+					<view class="wl_t1">
+						直升svip
+					</view>
+					<view class="wl_t2">
+						永久享6.5折起
+					</view>
+				</view>
+				<view><i class="icon icon-right"></i></view>
+			</navigator>
+
+		</view>
+		<view class="wl_czz">
+			<view class="wl_tip">
+				<view class="tt">我要赚成长值</view>
+				<view class="sm">成长值说明？</view>
+			</view>
+			<view class="wl_tip mtop">
+				<view>
+					<i class="icon icon-cart"></i>
+					<text class="t1">购物赚成长值</text>
+				</view>
+             <navigator  openType="navigate" url="/pages/goods/index/index">
+				<view class="btngw">去购物</view> 
+            </navigator>
+			</view>
+
+		</view>
+		<view class="hytq">
+			<view class="hyp">会员特权</view>
+         <block wx:if="{{!loading}}">
+			<view class="tit">---- 快速升级VIP专区 ----</view>
+			<view class="goods-list" >
+				<view class="goods-item" wx:for="{{list}}" wx:key="index">
+					<view class="czzyp">
+						<view class="num">3</view>
+						<view>成长值</view>
+					</view>
+					<view class="goods-imgs" style="background-image:url({{item.thumb}});"></view>
+					<view class="good-name">
+						<view class="title">{{item.title}}</view>
+						<view class="tt1">{{item.subtitle}}</view>
+						<!-- <view class="guige"><text>内含</text> VidaGlow深海胶原蛋白粉*<text>2罐</text> (规格可多选)</view> -->
+					</view>
+					<view class="goods-info">
+						<view class="price">
+							<view class="price1"> 官方零售价：￥{{item.productprice}}</view>
+							<view class="price2">限时活动价：￥<text class="bg">{{item.minprice}}</text> 
+							<navigator open-type="navigate" url="/pages/member/goodsinfo/index?data={{item.title}}&img={{item.thumb}}&id={{item.id}}" class="bk"><i class="icox icox-send" style="font-size:42rpx;color: #fd5555;"></i></navigator> </view>
+						</view>
+                  <navigator style="" url="/pages/goods/detail/index?id={{item.id}}">
+                  <view class="gmbtn">购买即升VIP会员 <i class="icon icon-right"></i></view>
+                  </navigator>
+						
+					</view>
+				</view>
+
+				<!-- <view class="goods-item">
+					<view class="czzyp">
+						<view class="num">30</view>
+						<view>成长值</view>
+					</view>
+					<view class="goods-imgs" style="background-image:url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1534980682,1392181623&fm=26&gp=0.jpg);"></view>
+					<view class="good-name">
+						<view class="title">由内而外 美肤焕彩</view>
+						<view class="tt1">ELLE BEAUTY年度最值得推荐的品牌</view>
+						<view class="guige"><text>内含</text> VidaGlow深海胶原蛋白粉*<text>2罐</text> (规格可多选)</view>
+					</view>
+					<view class="goods-info">
+						<view class="price">
+							<view class="price1"> 官方零售价：￥594</view>
+							<view class="price2">限时活动价：￥<text class="bg">516.6</text> <text class="bk">含税</text></view>
+						</view>
+						<view class="gmbtn">购买即升VIP会员 <i class="icon icon-right"></i></view>
+					</view>
+				</view> -->
+			</view>
+            </block>
+		</view>
+   
+	</view>
+ <view class="fui-loading" wx:if="{{loading}}">
+        <view class="icon"></view>
+        <view class="text">正在加载</view>
+    </view>
+</view>

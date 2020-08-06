@@ -1,0 +1,13 @@
+<video controls autoPauseIfNavigate="true" autoplay="{{autoplay}}" bindwaiting="{{replayLoading}}" enablePlayGesture="true" id="myVideo" src="{{media_url}}"></video>
+<view class="roomInfo">
+    <view class="roomTitle">{{name}}</view>
+    <view class="roomAuthor">
+        <image src="{{avatar}}"></image>
+        <text>{{nickname}}</text>
+    </view>
+    <view class="nav">
+        <scroll-view class="replay_item" scrollX="true">
+            <view bindtap="showVideo" class="replay_btn {{index===currentIndex?'color':''}}" data-index="{{index}}" data-src="{{item.media_url}}" wx:for="{{list}}" wx:key="index">第{{index+1}}部分</view>
+        </scroll-view>
+    </view>
+</view>

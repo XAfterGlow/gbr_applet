@@ -1,0 +1,37 @@
+<!--pages/member/Svip/index.wxml-->
+<view class="bsvip">
+	<view class="topimg" style="background-image:url({{u2}});"> </view>
+	<view class="tipbg">
+		<view class="title"> ---- 全国包邮细则 ----</view>
+		<view class="wl-nr">
+			<text>1.lovekins纸尿裤发新疆、西藏、青海、海南、甘肃、内蒙古、宁夏不包邮</text>
+			<text>2.葡萄酒发往新疆、西藏、海南不包邮</text>
+			<text>3.仅限注册用户及VIP用户购买</text>
+		</view>
+	</view>
+  <view class="wl-xzbtn">
+  <view class="btnth active">特惠直升区</view>
+  <view class="btnth">自选直升区</view>
+  </view>
+    <view>
+    <view class="zqbt">热卖套组专区</view>
+        <view class="goods-groups">
+        <view class="goods-item" >
+        <view class="item-top">全球领先口服美容品牌</view>
+        <view class="item-img" style="background-image:url({{saleout1}});"></view>
+        <view class="item-info">
+        <view class="t1">Vida Glow 明星单品优惠套餐</view>
+        <view class="t2">ELLE beauty 年度推荐口服美容品</view>
+        <view class="t3">内含：Vida Glow 深海鱼胶原蛋白粉X21罐（多种组合任性）</view>
+        </view>
+        	<view class="item-bottom">
+						<view class="price">
+            	<view class="price2">限时活动价：￥<text class="bg">5445.42</text> <text class="bk">含税</text></view>
+							<view class="price1"> 官方零售价：￥7959.00</view>
+						</view>
+						<view class="gmbtn">立即购买</view>
+					</view>
+        </view>
+        </view>
+    </view>
+</view>

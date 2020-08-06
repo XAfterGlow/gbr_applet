@@ -1,0 +1,4 @@
+.bg{
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592201680884&di=a55beb7458802a8753cddfee5a7c0349&imgtype=0&src=http%3A%2F%2Fa0.att.hudong.com%2F56%2F12%2F01300000164151121576126282411.jpg');
+  background-repeat:no-repeat
+}

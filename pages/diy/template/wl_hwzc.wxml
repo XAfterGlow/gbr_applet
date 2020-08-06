@@ -1,0 +1,16 @@
+<view class="wl_hw">
+<view class="wl_hwtop">
+ <view class="wl_hwltitle">好物种草</view><view class="wl_hwrmore">查看更多>></view>
+</view>
+<view class="wl_hwcontent">
+  <view class="wl_hwitem"  wx:for="{{diyitem.data}}" wx:for-index="childid" wx:for-item="childitem" wx:key="childid">
+  <view   class="wl_leftimg" style="background-image: url({{childitem.thumb}});">
+  <!-- <image src="{{childitem.thumb}}"></image> -->
+  </view> 
+  <view class="wl_righttt">
+  <view class="wl_t1">{{childitem.title}}</view>
+  <view class="wl_t2">{{childitem.price}}</view>
+  </view>
+  </view>
+</view>
+</view>

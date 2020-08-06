@@ -1,0 +1,84 @@
+/* my wl_pgoods 的样式 */
+.wl-body{
+  padding: 10rpx;
+}
+.wl-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wl-top .left{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.wl-img{
+  width: 150rpx;
+  height: 0;
+  overflow: hidden;
+   margin: 10rpx 20rpx;
+  padding-bottom: 120rpx;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 99;
+  border-radius: 24rpx;
+  box-shadow: 1px 0 4px rgba(0,0,0,0.1);
+  
+}
+
+.wl-title{
+  font-size: 22rpx;
+}
+.big-img{
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding-bottom: 320rpx;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -37rpx;
+  border-radius: 16rpx;
+  border: 1px solid #ddd;
+}
+
+.wl-list{
+  display: flex;  
+  flex-direction: column;  
+}
+.wl-list image{
+  width: 100%;
+  height: 200rpx;
+}
+.wl-t1{
+  width: 100%;
+  font-size: 18rpx;
+  text-align: center;
+}
+.my-scroll{
+  margin-top: -37rpx;
+}
+.wl-price{
+  color: #fc4444;
+  font-size: 18rpx;
+  text-align: center;
+}
+.wl-price2{
+  color: #ccc;
+  font-size: 14rpx;
+  text-align: center;
+  text-decoration:line-through ;
+
+}
+.scroll-view{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  display: inline-block;
+  width: 25%;
+  margin:20rpx;
+}

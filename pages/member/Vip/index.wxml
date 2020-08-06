@@ -1,0 +1,74 @@
+<!--pages/member/Vip/index.wxml-->
+
+<view class="bvip">
+	<view class="topimg" style="background-image:url({{u1}});">
+
+		<view class="tip">*仅限普通会员购买</view>
+	</view>
+	<view class="wl_body">
+		<view class="card">
+			<view class="wl-top">
+				<view>VIP会员 尊享更多特权</view>
+				<view class="more">更多权限 <i class="icon icon-right"></i></view>
+			</view>
+			<view class="wl-tequan">
+				<text>1. 享约8.5折购物优惠</text> <text>2. 大促期间再享更多会员特权</text> <text>3.可参加平台内福利星期三、买赠狂欢、限时拼团等频道活动</text>
+			</view>
+		</view>
+		<view class="btngrup">
+			<view class="btn-item">
+				<view class="tt">
+					<text class="big">爆款组合</text>
+					<text class="min">超人气爆款</text>
+				</view>
+				<view>
+					<i class="icon icon-right"></i>
+				</view>
+			</view>
+			<view class="btn-item">
+				<view class="tt">
+					<text class="big">明星推荐</text>
+					<text class="min">实力派女星同款</text>
+				</view>
+				<view>
+					<i class="icon icon-right"></i>
+				</view>
+			</view>
+			<view class="btn-item">
+				<view class="tt">
+					<text class="big">品牌专区</text>
+					<text class="min">国际大牌精选</text>
+				</view>
+				<view>
+					<i class="icon icon-right"></i>
+				</view>
+			</view>
+			<view class="btn-item">
+				<view class="tt">
+					<text class="big">海外专区</text>
+					<text class="min">海外专供</text>
+				</view>
+				<view>
+					<i class="icon icon-right"></i>
+				</view>
+			</view>
+		</view>
+		<view class="goodrs">
+			<view class="title">* 爆款组合 *</view>
+			<view class="goods-item">
+				<view class="item-img" style="background-image:url({{saleout1}});"></view>
+				<view class="item-info">
+					<view class="t1">口碑超百万 又薄又能吸</view>
+					<view class="t2">Lovekins Women 澳洲纯棉卫生巾x1套（多规格可选）</view>
+				</view>
+				<view class="item-bottom">
+					<view class="price">
+						<view class="price1"> 官方零售价：￥7959.00</view>
+						<view class="price2">限时活动价：￥<text class="bg">5445.42</text> <text class="bk">含税</text></view>
+					</view>
+					<view class="gmbtn">购买送VIP会员 <i class="icon icon-right"></i></view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

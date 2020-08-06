@@ -1,0 +1,304 @@
+/* pages/member/member.wxss */
+
+page{
+  background: #fff;
+}
+.model{
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  margin: 10rpx;
+}
+.wl_card{
+  background: #000;
+  border-radius: 24rpx;
+  margin:  12rpx;
+  /* width: 100%; */
+  height: 250rpx;
+  color: #E5CAC5;
+  padding: 40rpx;
+  font-family: 'Times New Roman', Times, serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.bgimg{
+  position: absolute;
+  bottom: 30rpx;
+  right: 0;
+  height: 200rpx;
+  opacity: 0.3;
+}
+.wl_userinfo{
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  height: 56rpx;
+  width: 56rpx;
+  background: #fff;
+  border-radius: 96rpx;
+  border: 4rpx solid #fff;
+}
+.avatar image {
+  height: 56rpx;
+  width: 56rpx;
+  border-radius: 96rpx;
+  display: block;
+
+}
+.nickname {
+  height: 40rpx;
+  padding-top: 8rpx;
+  font-size: 24rpx;
+  color: inherit;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-left: 10rpx;
+}
+.wl_qxname{
+  text-align: right;
+  font-size: 40rpx;
+  margin: 0 0 50rpx;
+}
+.wl_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+.wl_left .icon{
+ font-weight: 100;
+ font-size: 28rpx;
+ margin-left: 20rpx;
+}
+.wl_right{
+  font-size: 20rpx;
+}
+.wl_other{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  flex: 1 1 0%;
+}
+.wl_vip{
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-around;
+  align-items: center;
+  margin: 10rpx 0 ;
+}
+.my_vip{
+  background: #F9F5F4;
+  height: 100rpx;
+  width: 48%;
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wl_ic{
+  border-radius: 100%;
+  background: #fff;
+  width: 70rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wl_t1{
+  font-size: 28rpx;
+  letter-spacing:5rpx;
+}
+.wl_t2{
+  font-size: 20rpx;
+  letter-spacing:8rpx;
+  color: #7B7B7A;
+}
+.my_svip{
+  background: #F9F5F4;
+  height: 100rpx;
+  width: 48%;
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wl_czz{
+  background: #F9F5F4;
+  border-radius: 12rpx;
+  margin: 10rpx ;
+  padding: 30rpx;
+}
+.wl_czz .icon{
+  border-radius: 100%;
+  border:1px solid #333;
+  align-items: center;
+  justify-content: center;
+  padding: 8rpx;
+  margin-right: 20rpx;
+  font-size: 24rpx;
+}
+.wl_tip{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wl_tip .tt{
+  font-size: 30rpx;
+   font-weight: 500;
+}
+.sm{
+  font-size: 24rpx;
+  color: #9C9C9C;
+}
+.mtop{
+  margin-top:50rpx ;
+}
+.t1{
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+.btngw{
+  background: #000;
+  background: linear-gradient(to right,#50483B 0%,#0D0C0A 100%);
+  color: #DCC2BE;
+  border-radius: 25px;
+  text-align: center;
+  padding:15rpx 30rpx;
+  font-size: 20rpx;
+}
+.hytq{
+  background: #F9F5F4;
+  border-radius: 12rpx;
+  margin: 10rpx ;
+}
+.hyp{
+  text-align: left;
+  padding: 30rpx;
+}
+.tit{
+  text-align: center;
+  letter-spacing:5rpx;
+  font-weight: 600;
+  font-size: 36rpx;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.goods-list{
+  display: flex;
+  flex-direction: column;
+}
+.goods-item{
+  border-radius: 12rpx;
+  background: #fff;
+  margin: 20rpx;
+  position: relative;
+}
+.goods-imgs{
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding-bottom: 450rpx;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 12rpx;
+  border-top-right-radius: 12rpx;
+}
+.goods-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20rpx;  
+  padding: 20rpx;
+}
+.price .price1{
+  font-size: 16rpx;
+  color: #ccc;
+  text-decoration: line-through;
+
+}
+.price  .price2{
+  color:#E22018 ;
+}
+.price  .price2 .bg{
+  font-size: large;
+  font-weight: 600;
+}
+.price  .price2  .bk{
+  /* border: 1px solid #E22018; */
+  padding: 5rpx;
+  margin-left: 10rpx;
+  width: 45rpx;
+  display: inline-block;
+}
+.gmbtn{
+  background: #BB2B24;
+  padding: 15rpx 20rpx;
+  border-radius: 25rpx;
+  color: #fff;
+}
+.gmbtn .icon{
+  font-size: 20rpx;
+}
+.good-name{
+  text-align: center;
+}
+.title{
+  margin-top: 10rpx;
+  padding: 0 20rpx;
+  font-weight: 700;
+  overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all; 
+}
+.tt1{
+  font-size: 24rpx;
+  color: #666;
+  overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all; 
+}
+.guige{
+  font-size: 18rpx;
+  margin: 20rpx auto;
+}
+.guige text{
+  font-size: 20rpx;
+  font-weight: 600;
+}
+.czzyp{
+  /* background: #9A1710; */
+  background: linear-gradient(to bottom,#F45F5E 0%,#BB2B24 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  font-size: 24rpx;
+  top: 80rpx;
+  right: 100rpx;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 100%;
+  box-shadow: 1px 0 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  font-weight: 400;
+}
+.num{
+  font-size: 30rpx;
+  font-weight: 600;
+}
