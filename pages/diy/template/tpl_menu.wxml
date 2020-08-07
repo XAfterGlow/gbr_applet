@@ -7,6 +7,14 @@
           {{childitem.text}}
         </view>
     </navigator>
+    <navigator bindtap="navigate"  class="fui-icon-col external n4" hover-class="none" data-url="/pages/member/membercard/index?hasmembercard={{member.hasmembercard}}">
+        <view class="icon">
+            <image class="radius" src="https://gbr.xingrunshidai.com/attachment/images/6/2020/07/GxBde7tn9sVBtDNI17ItEb92q7cnNJ.png"></image>
+        </view>
+        <view class="text" style="color:{{childitem.color}}">
+          我的会员卡
+        </view>
+    </navigator>
 </view>
 <swiper autoplay="{{autoplay}}" class="menu" duration="{{duration}}" indicatorDots="{{diyitem.style.showdot==1?true:false}}" interval="{{interval}}" style="background:{{diyitem.style.background}};padding:20rpx 0;height:{{diyitem.data_line*160+diyitem.data_line*30}}rpx" wx:if="{{diyitem.style.showtype=='1'}}">
     <swiper-item class="col-{{diyitem.style.rownum}}" wx:for="{{diyitem.data_temp}}" wx:for-index="childid" wx:for-item="childitem" wx:key="childid">
@@ -19,4 +27,5 @@
         </view>
         </view>
     </swiper-item>
+   
 </swiper>

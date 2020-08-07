@@ -1,17 +1,18 @@
 <view style="overflow: hidden;height: 360rpx;position: relative;background: #fff" wx:if="{{diyitem.params.style=='default1'}}">
-    <view class="member-head" style="z-index:100;border: none;">
+    <view class="member-head" style="z-index:100;border: none;padding-top: 50rpx;">
         <view class="child">
             <view class="title" style="color:{{diyitem.style.textcolor||''}}">{{member.moneytext}}</view>
             <view class="number" style="color:{{diyitem.style.textlight||''}}">{{member.credit2}}</view>
             <navigator class="btn" hoverClass="btn-hover" openType="navigate" style="color:{{diyitem.style.textcolor||''}};border-color:{{diyitem.style.textcolor||''}}" url="{{diyitem.params.leftnavlink}}" wx:if="{{member.open_recharge}}">{{diyitem.params.leftnav}}</navigator>
         </view>
         <view class="child userinfo">
-            <view class="avatar {{diyitem.style.headstyle||''}}">
+            <view class="avatar {{diyitem.style.headstyle||''}}" style="position: relative;">
+                <!-- <image  wx:if="{{member.avatar!=''}}"  style="width:60rpx;height:60rpx;position: absolute;top: -18rpx;right: -25rpx;" class="levelicon" src="{{member.levelico||'/static/images/noface.png'}}"> </image>  -->
                 <image class="icon" src="{{member.avatar||'/static/images/noface.png'}}"></image>
             </view>
             <view class="nickname">{{member.nickname||'未更新用户信息'}}</view>
-            <view class="level">{{member.levelname}}</view>
-            <view class="level">{{member.id}}</view>
+            <view class="level" style="margin:8rpx 0">会员等级: {{member.levelname}}<image  wx:if="{{member.levelico!=''}}"  style="width:40rpx;height:40rpx;" class="levelicon" src="{{member.levelico||'/static/images/noface.png'}}"> </image> </view>
+            <view class="level">ID: {{member.id}}</view>
             <navigator class="btn" hoverClass="btn-hover" openType="navigate" url="/pages/auth/index" wx:if="{{!member.nickname}}">登录</navigator>
         </view>
         <view class="child">
@@ -20,14 +21,14 @@
         </view>
     </view>
     <view class="member_header" style="background:{{diyitem.style.background}};border-color:{{diyitem.style.background}}"></view>
-    <block wx:if="{{member.usemembercard}}">
+    <!-- <block wx:if="{{member.usemembercard}}">
         <navigator class="member_card" hoverClass="none" openType="navigate" url="/pages/member/membercard/index?hasmembercard={{member.hasmembercard}}">
             <image class="icon" src="/static/images/icon-huangguan.png"></image>
             <view class="title">我的会员卡</view>
             <view class="card-num">已拥有{{member.hasbuycardnum}}张</view>
         </navigator>
         <image class="cover-img" src="/static/images/cover.png"></image>
-    </block>
+    </block> -->
 </view>
 <view class="headinfo style-2" style="background:{{diyitem.style.background}};" wx:else>
     <navigator class="icon-style2" hoverClass="none" openType="navigate" url="/pages/member/membercard/index?hasmembercard={{member.hasmembercard}}" wx:if="{{member.usemembercard}}">

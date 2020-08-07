@@ -243,11 +243,15 @@
             </navigator>
         </view>
         <include src="/pages/common/menu.wxml"></include>
+       
     </view>
+
 </view>
+
 <button class="suspended-service" openType="contact" sessionFrom="weapp" showMessageCard="true" style="background-color:{{customercolor}}" wx:if="{{customer==1}}">
     <text class="icox icox-customerservice"></text>
 </button>
 <view bindtap="phone" class="phone" style="background-color:{{phonecolor}}" wx:if="{{phone==1}}">
     <text class="icox icox-dianhua"></text>
 </view>
+

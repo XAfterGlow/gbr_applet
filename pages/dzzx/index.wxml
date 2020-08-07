@@ -416,7 +416,8 @@
             <view class="fui-list-inner">
                 <view class="title">{{member['nickname']}}</view>
                 <view class="text">{{set['texts']['up']}}：{{agentname}}</view>
-                <view class="subtitle">{{levelname}}</view>
+                <!-- <view class="text">会员等级: <image wx:if="{{member['avatar']!=''}}"  style="width:40rpx;height:40rpx" src="{{member['avatar']}}"></image><view class="subtitle" style="top:10rpx;">{{levelname}}</view></view> -->
+                 <view class="text">会员等级:{{levelname}}<image wx:if="{{member['levelico']!=''}}"  style="width:40rpx;height:40rpx" src="{{member['levelico']}}"></image></view>
             </view>
         </view>
     </view>
@@ -425,7 +426,8 @@
             <view class="fui-cell-icon">
                 <text class="icox icox-yaoqingma" style="color: #FB1732;"></text>
             </view>
-            <view class="fui-cell-text">我的{{set['texts']['icode']}}：{{member['id']}}</view>
+            <!-- <view class="fui-cell-text">我的{{set['texts']['icode']}}：{{member['id']}}</view> -->
+            <view class="fui-cell-text">我的ID：{{member['id']}}</view>
         </view>
     </view>
     <view class="userblock">

@@ -27,7 +27,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
@@ -148,6 +148,13 @@
 					"id": -1,
 					"name": "pages/dzzx/index",
 					"pathName": "pages/dzzx/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/member/index/index",
+					"pathName": "pages/member/index/index",
 					"scene": null
 				}
 			]
